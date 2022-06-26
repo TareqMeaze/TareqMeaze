@@ -94,7 +94,7 @@ public class Loop extends AppCompatActivity {
                         //startActivity(new Intent(Loop.this,Pdf.class));
                     }
 
-                    //startActivity(new Intent(Loop.this,Pdf.class));
+                   
                 }
             });
 
