@@ -20,7 +20,9 @@ public class Pdf extends AppCompatActivity {
     MediaPlayer mediaPlayer;
     ListView listView;
     HashMap<String,String> hashMap;
+    
     public static String albumName ="";
+    
     public  static  ArrayList<HashMap<String,String>> mainArraylist = new ArrayList<>();
 
     public  static ArrayList<HashMap<String,String>> atifArraylist = new ArrayList<>();
@@ -32,8 +34,12 @@ public class Pdf extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pdf);
 
-        mainDash();
         atifAslam();
+       mainDash();
+       sakira();
+
+        
+        
         listView = findViewById(R.id.listView);
         MyAdapter myAdapter = new MyAdapter();
         listView.setAdapter(myAdapter);
