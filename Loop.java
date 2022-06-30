@@ -90,8 +90,12 @@ public class Loop extends AppCompatActivity {
                 public void onClick(View view) {
 
                     if (sTitle.contains("Atif Aslam")){
-                        
-                        //startActivity(new Intent(Loop.this,Pdf.class));
+                        Pdf.mainArraylist=atifArraylist;
+                        startActivity(new Intent(Loop.this,Pdf.class));
+
+                    }else if (sTitle.contains("Kabir Sing")){
+                        Pdf.mainArraylist=kabirArraylist;
+                        startActivity(new Intent(Loop.this,Pdf.class));
                     }
 
                    
